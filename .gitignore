@@ -1,0 +1,20 @@
+**/__pycache__/*
+**/*.pdf
+**/.DS_Store
+**/*.csv
+**/*.pkl
+**/*.png
+**/*.txt
+**/*.ptu
+**/*.lock
+.venv/
+lib/
+share/
+bin/
+**/*.cfg
+
+9_29-10_2_2023-Data-1539/
+
+# Files that are too large
+data/10_23-27-2023 (Qudsia Lab one way)/*
+data/20230509_5Day_CP_GM_Cs_BC_BC (Cs Reference, LTS GM)/TimingData/BC1-connection-GM-BC_update_rate_1_2023_05_09_11_03_50.dat
