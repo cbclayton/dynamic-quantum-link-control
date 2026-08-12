@@ -8,7 +8,7 @@ This repository provides the event-driven simulator used to evaluate the protoco
 
 ## Paper
 
-[Read the paper on arXiv](https://arxiv.org/abs/XXXX.XXXXX)
+[Read the paper on arXiv](https://arxiv.org/pdf/2608.07163) 
 
 
 ## Repository Contents
@@ -101,6 +101,12 @@ Simulation settings can be changed by editing the `settings` dictionary at the b
 ## Contact
 
 Please contact Connor Clayton (cbclayto@cs.umd.edu) with any questions.
+
+
+<br>
+<br>
+
+
 
 [![Wide-area quantum-link model](link_map.png)](link_map.png)
 
