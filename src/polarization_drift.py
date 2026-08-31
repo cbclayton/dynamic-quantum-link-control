@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
+import os
 
 from drift_predictor import DriftPredictor
 
-
-model_path = "models/drift_prediction_model.npz"
+model_path = os.path.join("models", "drift_prediction_model.npz")
 drift_predictor = DriftPredictor(load_path=model_path)
 
 def angle_between_stokes(stokes1, stokes2):

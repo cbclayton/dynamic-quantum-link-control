@@ -23,7 +23,7 @@ class WeatherLocation(enum.Enum):
 
 settings = {
     'experiment': "9_29-10_2_2023(Polarization) (Cs Reference, LTS GM, Star Top., ZEN_LEN)",
-    'basedir': "../data",
+    'basedir': os.path.join("..", "data"),
     'polarization_dirname': '1539 Polarization Data',
     'weather_api': WeatherAPI.API1,
     'weather_location': WeatherLocation.LTS,
