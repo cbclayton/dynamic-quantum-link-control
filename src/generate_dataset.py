@@ -262,7 +262,7 @@ def get_polarization_data(dir):
     all_dfs.sort_values(by=['timestamp'], inplace=True)
     all_dfs.attrs['filename'] = os.path.basename(dir)
 
-    all_dfs['timestamp'] = pd.to_datetime(all_dfs['timestamp'], unit='s')
+    all_dfs['timestamp'] = UTC2EDT(pd.to_datetime(all_dfs['timestamp'], unit='s'))
     all_dfs.set_index('timestamp', inplace=True)
     all_dfs
     all_dfs.to_pickle(pickle_path)
