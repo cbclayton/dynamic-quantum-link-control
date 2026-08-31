@@ -224,8 +224,8 @@ def get_polarization_data(dir):
 
     pickle_path = os.path.join(dir, "PolarizationData.pkl")
     cached = getpkl(pickle_path)
-    if isinstance(cached, pd.core.frame.DataFrame):
-        return cached
+    # if isinstance(cached, pd.core.frame.DataFrame):
+    #     return cached
 
     dfs = []
     for i, filepath in enumerate(sorted(glob(os.path.join(dir, '*.txt')))):
@@ -264,8 +264,8 @@ def get_polarization_data(dir):
 
     all_dfs['timestamp'] = UTC2EDT(pd.to_datetime(all_dfs['timestamp'], unit='s'))
     all_dfs.set_index('timestamp', inplace=True)
-    all_dfs
-    all_dfs.to_pickle(pickle_path)
+    # all_dfs
+    # all_dfs.to_pickle(pickle_path)
 
     print("-------------- Finished reading polarization data. --------------")
 
@@ -295,7 +295,7 @@ def get_timing_data(dir):
     all_dfs = pd.concat(dfs)
     all_dfs.sort_values(by=['timestamp'], inplace=True)
     all_dfs.attrs['filename'] = os.path.basename(dir)
-    all_dfs.to_pickle(pickle_path)
+    # all_dfs.to_pickle(pickle_path)
 
     return all_dfs
 
