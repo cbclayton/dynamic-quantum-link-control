@@ -44,6 +44,7 @@ All code is written in Python. Python 3.14 or newer is recommended.
 To get started, create and activate a virtual environment, then install the required dependencies:
 
 ```bash
+cd dynamic-quantum-link-control
 python -m venv .
 source ./bin/activate
 python -m pip install -r requirements.txt
